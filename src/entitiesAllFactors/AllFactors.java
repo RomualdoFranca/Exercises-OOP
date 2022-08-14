@@ -22,16 +22,59 @@ For example, the printout for printFactors(10); can be:
 10
 */
     private int number;
-    private int dividers;
     public AllFactors() {
         System.out.println("Empty constructor called");
     }
-    public AllFactors(int number, int dividers) {
+    public AllFactors(int number) {
         this.number = number;
-        this.dividers = dividers;
+
+    }
+//    public void printFactors(int number) {
+//        // validate number
+//        if (this.number < 1) {
+//            this.number = -1;
+//        }
+//        int divisor = 1;
+//        while (divisor <= number) {
+//            divisor++;
+//            if (number % divisor == 0) {
+//                this.number = divisor;
+//                System.out.printf("%d", this.number);
+//            }
+//        }
+//    }
+
+
+    public void printFactors(int number) {
+        // validate number
+        if (number < 1) {
+            number =  -1;
+        }
+        int divisor = 0;
+        while (divisor < number) {
+            divisor++;
+            if (number % divisor == 0) {
+                System.out.printf("%d ", divisor);
+            }
+        }
     }
 
+//    public void printFactors() {
+//        // validate number
+//        if (getNumber() < 1) {
+//            this.number = -1;
+//        }
+//        int divisor = 1;
+//        while (divisor <= getNumber()) {
+//            divisor++;
+//            if (getNumber() % divisor == 0) {
+//                this.number = divisor;
+//                System.out.printf("%d", this.number);
+//            }
+//        }
+//    }
     public int getNumber() {
+//        return printFactors(number);
         return number;
     }
 
@@ -39,11 +82,4 @@ For example, the printout for printFactors(10); can be:
         this.number = number;
     }
 
-    public int getDividers() {
-        return dividers;
-    }
-
-    public void setDividers(int dividers) {
-        this.dividers = dividers;
-    }
 }
