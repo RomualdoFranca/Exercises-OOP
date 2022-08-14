@@ -1,6 +1,16 @@
 package entitiesDigitSumChallenger;
 
 public class DigitSumChallenger {
+
+    private int digit;
+
+    public DigitSumChallenger() {
+        System.out.println("Empty constructor called");
+
+    }
+    public DigitSumChallenger(int digit) {
+        this.digit = digit;
+    }
      /*Write a method with the name sumDigits that has one int parameter called number.If parameter is >= 10 then the
     method should process the number and return sum of all digits, otherwise return -1 to indicate an invalid value.
     The numbers from 0-9 have 1 digit so we don't want to process them, also we don't want to process negative numbers,
