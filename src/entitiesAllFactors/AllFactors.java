@@ -29,20 +29,6 @@ For example, the printout for printFactors(10); can be:
         this.number = number;
 
     }
-//    public void printFactors(int number) {
-//        // validate number
-//        if (this.number < 1) {
-//            this.number = -1;
-//        }
-//        int divisor = 1;
-//        while (divisor <= number) {
-//            divisor++;
-//            if (number % divisor == 0) {
-//                this.number = divisor;
-//                System.out.printf("%d", this.number);
-//            }
-//        }
-//    }
 
 
     public void printFactors(int number) {
@@ -58,21 +44,6 @@ For example, the printout for printFactors(10); can be:
             }
         }
     }
-
-//    public void printFactors() {
-//        // validate number
-//        if (getNumber() < 1) {
-//            this.number = -1;
-//        }
-//        int divisor = 1;
-//        while (divisor <= getNumber()) {
-//            divisor++;
-//            if (getNumber() % divisor == 0) {
-//                this.number = divisor;
-//                System.out.printf("%d", this.number);
-//            }
-//        }
-//    }
     public int getNumber() {
 //        return printFactors(number);
         return number;

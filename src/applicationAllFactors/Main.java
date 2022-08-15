@@ -10,6 +10,8 @@ public class Main {
         factors.printFactors(factors.getNumber());
         factors.setNumber(32);
         factors.printFactors(factors.getNumber());
+        factors.setNumber(6);
+        factors.printFactors(factors.getNumber());
 
 //        System.out.println(factors.getNumber());
     }
