@@ -26,7 +26,16 @@ public class FirstAndLastDigitSum {
     }
 
     public int firstAndLastDigitSum(int number) {
-        if (this.number < 0) {
+        if (number < 0) {
+            return -1;
+        }
+        int lastDigit = number % 10;
+        while (number / 10 >= 1) {
+          number /= 10;
+
+        }
+        return lastDigit + number;
+        /*        if (this.number < 0) {
             return -1;
         }
         int lastDigit = this.number % 10;
@@ -34,7 +43,7 @@ public class FirstAndLastDigitSum {
           this.number /= 10;
 
         }
-        return lastDigit + this.number;
+        return lastDigit + this.number;*/
     }
     public int getNumber() {
         return number;
